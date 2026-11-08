@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-26.04
     steps:
       - name: Imprimir mensaje porconsola
-        run: echo "El mensaje es: ${{ inputs.mensaje }}"
+        run: 'echo "El mensaje es: ${{ inputs.mensaje }}"'
