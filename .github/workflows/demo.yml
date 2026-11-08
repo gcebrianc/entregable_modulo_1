@@ -1,0 +1,15 @@
+name: Workflow manual
+on:
+  workflow_dispatch:
+    inputs:
+      mensaje:
+        description: 'Escribe el mensaje a imprimir'
+        required: true
+        type: string
+
+jobs:
+  imprimir-mensaje:
+    runs-on: ubuntu-26.04
+    steps:
+      - name: Imprimir mensaje porconsola
+        run: echo "El mensaje es: ${{ inputs.mensaje }}"
